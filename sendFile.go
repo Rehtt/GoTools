@@ -16,7 +16,7 @@ Http send file
 f		:File pointer
 buf_n	:File buffer size. Default:512
  */
-func sendFile(writer http.ResponseWriter, request *http.Request, f *os.File,buf_n int) {
+func SendFile(writer http.ResponseWriter, request *http.Request, f *os.File,buf_n int) {
 	defer f.Close()
 	info, err := f.Stat()
 	if err != nil {
