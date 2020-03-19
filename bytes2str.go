@@ -2,6 +2,6 @@ package GoTools
 
 import "unsafe"
 
-func bytes2str(b []byte) string {
+func Bytes2str(b []byte) string {
 	return *(*string)(unsafe.Pointer(&b))
 }
